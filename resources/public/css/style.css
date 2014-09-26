@@ -1,3 +1,36 @@
+html, body {
+  height: 100%;
+}
+
 body {
-  background: silver;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body.green {
+  background-color: #EBFAEB;
+}
+
+body.red {
+  background-color: #FFEBE6;
+}
+
+.fact {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 22em;
+  margin-top: -11em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.city-wrapper {
+  font-size: 3.2em;
 }
