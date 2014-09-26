@@ -11,10 +11,10 @@
 
                  [prismatic/plumbing "0.3.3"]
                  [prismatic/fnhouse "0.1.1"]
-                 [clj-http "0.9.0"]
-                 [ring/ring-core "1.0.0-RC1"]
-                 [ring/ring-jetty-adapter "1.0.0-RC1"] ;; !
-                 [ring/ring-json "0.2.0"]              ;; !
+                 [clj-http "1.0.0"]
+                 [ring/ring-core "1.3.1"]
+                 [ring/ring-jetty-adapter "1.3.1"]
+                 [ring/ring-json "0.3.1"]
 
                  [com.maxmind.geoip2/geoip2 "0.10.0"]
 
@@ -28,11 +28,10 @@
   :cljsbuild {
     :builds [{:id "dev"
               :source-paths ["src/cljs/eshemozhno" "src/cljs/figwheel"]
-              :compiler {
-                :output-to "resources/public/js/eshemozhno.js"
-                :output-dir "resources/public/js/out"
-                :optimizations :none
-                :source-map true}}]}
+              :compiler {:output-to "resources/public/js/eshemozhno.js"
+                         :output-dir "resources/public/js/out"
+                         :optimizations :none
+                         :source-map true}}]}
   :figwheel {
     :http-server-root "public"
     :port 3449
