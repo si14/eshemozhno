@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "PT Sans", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -26,11 +26,32 @@ body.red {
   top: 50%;
   width: 100%;
   height: 22em;
-  margin-top: -11em;
+  margin-top: -7em;
   text-align: center;
   white-space: nowrap;
+  opacity: 0.85;
 }
 
-.city-wrapper {
-  font-size: 3.2em;
+.status {
+  font-size: 5em;
+}
+
+.caption {
+  font-family: "PT Sans Caption", sans-serif;
+  font-size: 1em;
+}
+
+@media (max-width: 750px) {
+  .status {
+    font-size: 4em;
+  }
+
+  .caption {
+    font-size: 0.8em;
+  }
+}
+
+
+.city-select {
+  border-bottom: 2px dashed gray;
 }

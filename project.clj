@@ -8,6 +8,7 @@
             [lein-figwheel "0.1.4-SNAPSHOT"]]
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [org.clojure/clojurescript "0.0-2356"]
+                 [org.clojure/core.async "0.1.346.0-17112a-alpha"]
 
                  [prismatic/plumbing "0.3.3"]
                  [prismatic/fnhouse "0.1.1"]
@@ -17,6 +18,12 @@
                  [ring/ring-json "0.3.1"]
 
                  [com.maxmind.geoip2/geoip2 "0.10.0"]
+
+                 [om "0.7.3"]
+                 [prismatic/dommy "0.1.3"]
+                 [prismatic/om-tools "0.3.3" :exclusions [org.clojure/clojure]]
+                 [com.andrewmcveigh/cljs-time "0.2.1"]
+                 [secretary "1.2.1"]
 
                  [figwheel "0.1.4-SNAPSHOT"]]
 
