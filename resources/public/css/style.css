@@ -54,4 +54,5 @@ body.red {
 
 .city-select {
   border-bottom: 2px dashed gray;
+  user-select: none;
 }
