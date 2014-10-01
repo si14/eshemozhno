@@ -67,7 +67,9 @@
       (dom/div {:class "caption"}
         "купить алкоголь "
         (->city-selector cursor)
-        " (до " (-> cities (get city) :from) ")"))))
+        " (до " (if buying-allowed
+                  (-> cities (get city) :until)
+                  (-> cities (get city) :from)) ")"))))
 
 (om/root
  root-component
