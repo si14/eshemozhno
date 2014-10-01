@@ -11,8 +11,8 @@
    [om-tools.core :refer-macros [defcomponent defcomponentk]]
    [om-tools.dom :as dom :include-macros true]
    [om.dom :as dom-om]
-
-   [figwheel.client :as fw :include-macros true])
+   [figwheel.client :as fw :include-macros true]
+   [eshemozhno.location :as location])
   (:use-macros
     [dommy.macros :only [node sel sel1]]))
 
